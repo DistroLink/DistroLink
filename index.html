@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DistroLink — Delivery & Distribution, Tri-State Area</title>
+  <meta name="description" content="DistroLink streamlines delivery and distribution across the Tri-State area using technology to maximize efficiency and cut costs.">
+  <meta property="og:title" content="DistroLink — Delivery & Distribution">
+  <meta property="og:description" content="Streamlined delivery & distribution for the Tri-State area.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo-icon.png">
+  <meta name="theme-color" content="#0b1a3a">
+  <link rel="icon" href="assets/logo-icon.png">
+  <link rel="apple-touch-icon" href="assets/logo-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <style>.brand-text { font-weight: 800; letter-spacing: .3px; font-size: 1.05rem; }</style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="brand">
+      <img src="assets/logo-full.png" alt="DistroLink logo" class="logo-full"
+           onerror="this.style.display='none'; this.closest('.brand').insertAdjacentHTML('beforeend','<span class=\'brand-text\'>DistroLink</span>')">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home" data-scroll="#home">Home</a>
+      <a href="#about" data-scroll="#about">About</a>
+      <a href="#services" data-scroll="#services">Services</a>
+      <a href="#technology" data-scroll="#technology">Technology</a>
+      <a href="#pickup" data-scroll="#pickup">Request Pickup</a>
+      <a href="#contact" data-scroll="#contact">Contact</a>
+    </nav>
+    <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content container">
+        <h1>Smart delivery & distribution for the Tri-State area</h1>
+        <p>DistroLink uses technology to maximize efficiency, visibility, and cost savings across last-mile and scheduled routes.</p>
+        <div class="actions">
+          <a class="btn primary" href="#pickup" data-scroll="#pickup" role="button">Request a pickup</a>
+          <a class="btn" href="#services" data-scroll="#services" role="button">See services</a>
+        </div>
+      </div>
+      <div class="hero-bg" role="img" aria-label="City logistics background"
+           style="background-image:url('assets/hero.jpg');"></div>
+    </section>
+
+    <section class="stats container">
+      <div class="stat"><strong>Tri-State</strong><span>NY • NJ • CT coverage</span></div>
+      <div class="stat"><strong>On-time</strong><span>Route-optimized dispatch</span></div>
+      <div class="stat"><strong>Transparent</strong><span>Live ETAs & POD</span></div>
+    </section>
+
+    <section id="about" class="about container">
+      <div class="grid two">
+        <div>
+          <h2>Our purpose</h2>
+          <p>We streamline delivery and distribution using modern tools—route optimization, digital proof-of-delivery, and simple integrations—to cut costs while improving reliability.</p>
+          <ul class="checklist">
+            <li>Scheduled & on-demand routes</li>
+            <li>Last-mile distribution & bulk drop</li>
+            <li>Coverage across NYC, Westchester/Putnam, Long Island, New Jersey, and Connecticut</li>
+          </ul>
+        </div>
+        <div><img class="rounded shadow" src="assets/about.jpg" alt="Courier operations"></div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid three">
+          <div class="card">
+            <h3>Last-mile delivery</h3>
+            <p>Time-windowed stops, live tracking, and photo/signature POD for peace of mind.</p>
+          </div>
+          <div class="card">
+            <h3>Scheduled routes</h3>
+            <p>Daily/weekly distribution with performance summaries.</p>
+          </div>
+          <div class="card">
+            <h3>Bulk & multi-drop</h3>
+            <p>Efficient sequences for print, samples, and B2B distribution across dense areas.</p>
+          </div>
+          <div class="card">
+            <h3>Pharmacy</h3>
+            <p>Fast, reliable local pharmacy logistics for timely prescription drop-offs across the Tri-State area.</p>
+          </div>
+          <div class="card">
+            <h3>Custom projects</h3>
+            <p>From pop-up campaigns to seasonal surges, we scale with vetted drivers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technology" class="technology container">
+      <div class="grid two">
+        <div>
+          <h2>Technology-driven efficiency</h2>
+          <ul class="bullets">
+            <li>Route optimization to cut miles and time</li>
+            <li>Driver app for photo/signature proof-of-delivery</li>
+            <li>Automated ETAs and customer notifications</li>
+            <li>CSV/Excel import and simple API hooks</li>
+          </ul>
+        </div>
+        <div><img class="rounded shadow" src="assets/tech.jpg" alt="Routing dashboard visualization"></div>
+      </div>
+    </section>
+
+    <section id="pickup" class="pickup">
+      <div class="container">
+        <h2>Request a pickup</h2>
+        <p>Tell us where and when — we’ll confirm details and send a driver.</p>
+        <form id="pickup-form" class="pickup-form" method="POST">
+          <div class="grid two">
+            <label><span>Name</span><input type="text" name="name" required></label>
+            <label><span>Email</span><input type="email" name="email" required></label>
+          </div>
+          <div class="grid two">
+            <label><span>Phone</span><input type="tel" name="phone" required></label>
+            <label><span>Company</span><input type="text" name="company"></label>
+          </div>
+          <div class="grid two">
+            <label><span>Street address</span><input type="text" name="street" required></label>
+            <label><span>City</span><input type="text" name="city" required></label>
+          </div>
+          <div class="grid two">
+            <label><span>State</span><input type="text" name="state" required></label>
+            <label><span>ZIP</span><input type="text" name="zip" required></label>
+          </div>
+          <div class="grid two">
+            <label><span>Preferred date</span><input type="date" name="date" required></label>
+            <label><span>Time</span><input type="text" name="time_window" placeholder="e.g., 2–4 PM" required></label>
+          </div>
+          <div class="grid two">
+            <label><span>Package count</span><input type="number" name="packages" min="1" step="1" required></label>
+            <label><span>Notes (optional)</span><input type="text" name="notes" placeholder="Access instructions, contact on arrival, etc."></label>
+          </div>
+          <input type="text" name="_gotcha" style="display:none">
+          <button class="btn primary" type="submit">Submit request</button>
+          <p class="form-note">Or contact us directly at <a href="mailto:contact@mydistrolink.com">contact@mydistrolink.com</a> or <a href="tel:+15163040391">516-304-0391</a>.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="card contact-card large">
+          <h2>Reach us directly</h2>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:contact@mydistrolink.com">contact@mydistrolink.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+15163040391">516-304-0391</a></li>
+            <li><strong>Service area:</strong> New York, New Jersey, Connecticut</li>
+            <li><strong>Hours:</strong> Mon–Fri, 8am–6pm ET (after-hours available by request)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> DistroLink. All rights reserved.</p>
+      <nav class="footer-nav"><a href="#about" data-scroll="#about">About</a><a href="#services" data-scroll="#services">Services</a><a href="#pickup" data-scroll="#pickup">Request Pickup</a><a href="#contact" data-scroll="#contact">Contact</a></nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
